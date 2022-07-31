@@ -10,6 +10,8 @@ restSum(0); // => 0
 ***********************************************************************/
 
 function restSum(...otherNums) {
+  const res = otherNums.reduce((p, c) => Number(p) + Number(c), 0);
+  return res;
   // Your code here
 }
 

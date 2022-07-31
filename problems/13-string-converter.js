@@ -13,6 +13,14 @@ console.log(stringConverter("raccoon")); // => {r: 1, a: 1, c: 2, o: 2, n: 1}
 
 function stringConverter(string) {
   // Your code here
+  const count = {};
+  for (const a of string) {
+    if (!count[a]) {
+      count[a] = 0;
+    }
+    count[a]++;
+  }
+  return count;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
