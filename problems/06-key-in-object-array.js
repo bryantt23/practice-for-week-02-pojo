@@ -21,6 +21,7 @@ keyInObjectArray(objArray, 'animal'); // => false
 
 function keyInObjectArray(objArray, keyString) {
   // Your code here
+  return objArray.find(obj => obj[keyString] !== undefined) !== undefined;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
